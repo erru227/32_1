@@ -1,0 +1,17 @@
+{
+    "name": "websocket-example",
+    "version": "1.0.0",
+    "description": "Used to showcase basic websocket live game functionality",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "author": "Your Name",
+    "dependencies": {
+        "express": "^5.3.0",
+        "ws": "^8.18.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "Link Here"
+    }
+}

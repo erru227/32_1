@@ -1,0 +1,23 @@
+body {
+    font-size:28px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+}
+button,select,option,input[type="text"],[type="number"]{
+    font-size:28px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+img{
+    width: 500px;
+}
+.game{
+    display: none;
+}
+.clicked{
+    color:white;
+    background: blue;
+}
+.opp_clicked{
+    color:white;
+    background: red;
+}
