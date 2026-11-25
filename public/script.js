@@ -3,12 +3,21 @@ let websocket = new WebSocket(url);
 var output = document.getElementById("message");
 var l_b = document.getElementById("l_b");
 var r_b = document.getElementById("r_b");
+var game_area = document.getElementById("g_area");
 let change_seen = false;
 
 websocket.onmessage = (event) => {
    const msg = JSON.parse(event.data);
    if (msg.type === "click") {
       other_click(document.getElementById(msg.id));
+   } else if (msg.type === "status") {
+      if (msg.players >= 2) {
+         game_area.classList.remove("game");
+         output.textContent = "";
+      } else {
+         game_area.classList.add("game");
+         output.textContent = "Waiting for another player...";
+      }
    }
 };
 
