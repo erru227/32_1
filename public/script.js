@@ -16,7 +16,7 @@ websocket.onmessage = (event) => {
          output.textContent = "";
       } else {
          game_area.classList.add("game");
-         output.textContent = "Waiting for another player...";
+         output.textContent = "Waiting...";
       }
    }
 };
